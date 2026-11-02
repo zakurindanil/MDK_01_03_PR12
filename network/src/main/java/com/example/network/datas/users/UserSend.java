@@ -14,7 +14,7 @@ public class UserSend extends MyAsyncTask {
     @Override
     protected String doInBackground(Void... voids) {
         try {
-            Connection.Response response = Jsoup.connect(Settings.URL + "/api/user/send?email=" + mail )
+            Connection.Response response = Jsoup.connect(Settings.URL + "/api/user/send?email=" + mail)
                     .ignoreContentType(true)
                     .ignoreHttpErrors(true)
                     .method(Connection.Method.GET)
